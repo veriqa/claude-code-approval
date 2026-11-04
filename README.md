@@ -21,6 +21,19 @@ Demo 3 takes **two approvers in turn**: `developer`, then `manager`. Each confir
 messaging app account, enrolled once beforehand, and a confirmation from any other account refuses the
 action. Demos 1 and 2 take one approval from whoever holds the link.
 
+<table align="center">
+  <tr>
+    <td><a href="./media/claude-code-1.webp"><img src="./media/claude-code-1-thumb.webp" width="260" alt="Claude Code: git push waits until the user approves it in the messaging app" /></a></td>
+    <td><a href="./media/claude-code-2.webp"><img src="./media/claude-code-2-thumb.webp" width="260" alt="Claude Code: a long command cycle starts only after approval in the messaging app" /></a></td>
+    <td><a href="./media/claude-code-3.webp"><img src="./media/claude-code-3-thumb.webp" width="260" alt="Claude Code: a costly run with a cost estimate is approved by two people in turn" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>1. A tool call — <code>git push</code>, <code>rm -r</code></sub></td>
+    <td align="center"><sub>2. The start of a long command cycle</sub></td>
+    <td align="center"><sub>3. A costly run — two approvers in turn</sub></td>
+  </tr>
+</table>
+
 **Claude Code 2.1.295 or later** is needed: the sample relies on the mod API of that build.
 
 ## Why this sample exists
